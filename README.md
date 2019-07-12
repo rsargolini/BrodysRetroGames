@@ -19,10 +19,8 @@ Selling page - A user will have the ability to enter information about video gam
 The web address will be www.BrodysRetroVideoGames.com.
 
 ## Audience
-- Primary
-Avid retro video game collectors who are looking to buy games to complete there collection. 
-- Secondary
-Any gamer who is looking buy, play then sell there retro games.  
+- Primary - Avid retro video game collectors who are looking to buy games to complete there collection. 
+- Secondary - Any gamer who is looking buy, play then sell there retro games.  
 
 ### Credits
 - Content provided by [wiki](http://www.wiki.com)
