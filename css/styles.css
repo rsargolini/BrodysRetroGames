@@ -1,0 +1,14 @@
+h1  {
+    color: blue;
+    font-family: "Impact", Charcoal, sans-serif;
+    margin-top: 3%;
+}
+
+#homepageimage {
+    border-radius: 25px;
+}
+
+#homepagequote {
+    font-size: 40px;
+    font-style: italic;
+}
