@@ -6,8 +6,11 @@ h1  {
 }
 
 /* Home Page Picture Styles  */
-#homepageimage {
+#homepageimage1, #homepageimage2 {
     border-radius: 25px;
+}
+#homepageimagesm {
+    display: none;
 }
 
 /* Home Page Quote Styles */
@@ -21,3 +24,34 @@ h1  {
     color: red;
     font-weight: bold;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+#homepageimagelg, #homepageimagesm {display: none;}
+#imagescredit {display: none;}
+#indexheader {font-size: 40px; margin-top: 6%}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+#homepageimagelg {display: none;}
+#homepageimagesm {display: inline;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+#indexheader {font-size: 60px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+#homepageimagelg {display: inline;}
+#homepageimagesm {display: none;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) {
+#indexheader {font-size: 90px;}
+} 
+
+
