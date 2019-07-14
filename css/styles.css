@@ -1,14 +1,23 @@
+/* Jumbotron Text Styles */
 h1  {
     color: blue;
     font-family: "Impact", Charcoal, sans-serif;
     margin-top: 3%;
 }
 
+/* Home Page Picture Styles  */
 #homepageimage {
     border-radius: 25px;
 }
 
+/* Home Page Quote Styles */
 #homepagequote {
     font-size: 40px;
     font-style: italic;
+}
+
+/* Register Page Styles */
+#requiredfields {
+    color: red;
+    font-weight: bold;
 }
