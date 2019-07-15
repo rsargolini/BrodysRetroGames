@@ -3,6 +3,11 @@ h1  {
     color: blue;
     font-family: "Impact", Charcoal, sans-serif;
     margin-top: 3%;
+    padding: 2rem 1rem;
+}
+
+#titlecontainer {
+    background-color: lightsteelblue;
 }
 
 /* Home Page Picture Styles  */
@@ -16,17 +21,28 @@ h1  {
 /* Home Page Quote Styles */
 #homepagequote {
     font-size: 40px;
-    font-style: italic;
 }
 
 /* Register Page Styles */
 #requiredfields {
     color: red;
-    font-weight: bold;
+}
+
+#sellinggamestitle, #buyingamestitle, #abouttitle {
+    font-size: 2em;
 }
 
 .alllabels {
     font-weight: bold;
+}
+
+hr { 
+    border-width: 3px;
+} 
+
+
+.aboutlist li {
+    border-bottom: 1px solid black;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -34,18 +50,19 @@ h1  {
 #homepageimagelg, #homepageimagesm {display: none;}
 #imagescredit {display: none;}
 #indexheader {font-size: 40px; margin-top: 6%}
+.buttontext {display: none;}
+.table {font-size: 12px;}
+.aboutimages {display: none;}
+.aboutcontent {font-size: 12px;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 #homepageimagelg {display: none;}
 #homepageimagesm {display: inline;}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 #indexheader {font-size: 60px;}
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
