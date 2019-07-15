@@ -8,14 +8,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <!-- Font Awesome: https://fontawesome.com/icons?d=gallery&m=free -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <link rel="icon" href="img/gamecontroller.png"/>
+    <link rel="icon" href="img/gamecontroller.png" />
 
     <title>Brody's Retro Games</title>
 </head>
@@ -44,32 +44,29 @@
 
     <main>
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1 class="display-2" id="indexheader">Brody's Retro Games</h1>
-            </div>
+        <div class="container text-center col-12" id="titlecontainer">
+            <h1 class="display-2" id="indexheader">Brody's Retro Games</h1>
         </div>
 
         <div class="d-flex justify-content-center align-items-center container">
             <form name="loginform" action="login.html" method="POST">
                 <div class="form-row">
-                    <div id="requiredfields" class="form-group col">Required fields &#42;</div>
+                    <div id="requiredfields" class="form-group col"><strong>Required fields &#42;</strong></div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col">
                         <label for="inputFName" class="alllabels">First Name &#42;</label>
-                        <input type="text" class="form-control" placeholder="Enter First name" required autofocus>
+                        <input type="text" class="form-control" id="inputFName" placeholder="Enter First name" required
+                            autofocus>
                     </div>
                     <div class="form-group col">
                         <label for="inputLName" class="alllabels">Last Name &#42;</label>
-                        <input type="text" class="form-control" placeholder="Enter Last name" required>
+                        <input type="text" class="form-control" id="inputLName" placeholder="Enter Last name" required>
                     </div>
                 </div>
                 <div class="form-group">
-                        <label for="inputEmail" class="alllabels">Email Address &#42;</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address"
-                            required>
+                    <label for="inputEmail" class="alllabels">Email Address &#42;</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address" required>
                 </div>
                 <div class="form-row">
                     <div class="form-group col">
@@ -78,9 +75,9 @@
                             minlength="8" maxlength="15" required>
                     </div>
                     <div class="form-group col">
-                            <label for="confirmPassword" class="alllabels">Confirm Password &#42;</label>
-                            <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter Password"
-                                minlength="8" maxlength="15" required>
+                        <label for="confirmPassword" class="alllabels">Confirm Password &#42;</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter Password"
+                            minlength="8" maxlength="15" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -117,19 +114,19 @@
                     </div>
                 </div>
                 <div class="form-group">
-                        <label for="hearabout" class="alllabels">How Did You Hear About Us?</label>
-                        <select id="hearabout" class="form-control">
-                            <option selected>Select...</option>
-                            <option>Google</option>
-                            <option>Facebook</option>
-                            <option>Twitter</option>
-                            <option>Friend</option>
-                            <option>Other</option>
-                        </select>
+                    <label for="hearabout" class="alllabels">How Did You Hear About Us?</label>
+                    <select id="hearabout" class="form-control">
+                        <option selected>Select...</option>
+                        <option>Google</option>
+                        <option>Facebook</option>
+                        <option>Twitter</option>
+                        <option>Friend</option>
+                        <option>Other</option>
+                    </select>
                 </div>
                 <div class="form-group text-center pt-3">
-                    <button type="submit" class="btn btn-success btn-lg active">Submit</button>
-                    <a class="btn btn-success btn-lg active" href="index.html" role="button">Cancel</a>
+                    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                    <a class="btn btn-secondary btn-lg" href="index.html" role="button">Cancel</a>
                     <button type="reset" class="btn btn-danger btn-lg">Reset</button>
                 </div>
             </form>
