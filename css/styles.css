@@ -1,4 +1,4 @@
-/* Jumbotron Text Styles */
+/* Jumbotron Text Styles  */
 h1  {
     color: blue;
     font-family: "Impact", Charcoal, sans-serif;
@@ -40,10 +40,63 @@ hr {
     border-width: 3px;
 } 
 
-
 .aboutlist li {
     border-bottom: 1px solid black;
 }
+
+#welcomeback {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.landingbutton {
+    border-radius: 50%;
+}
+
+.controllerbuttons {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .controllerbuttons img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .controllerbuttons .buybutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -25%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .controllerbuttons .sellbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -25%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: transparent;
+  }
+  
+  
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -54,6 +107,7 @@ hr {
 .table {font-size: 12px;}
 .aboutimages {display: none;}
 .aboutcontent {font-size: 12px;}
+#welcomeback {font-size: 35px;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
