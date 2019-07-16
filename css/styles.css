@@ -1,4 +1,4 @@
-/* Jumbotron Text Styles  */
+/* All Pages - Website Title */
 h1  {
     color: blue;
     font-family: "Impact", Charcoal, sans-serif;
@@ -6,127 +6,40 @@ h1  {
     padding: 2rem 1rem;
 }
 
+/* All Pages - Website Title Container */
 #titlecontainer {
     background-color: lightsteelblue;
 }
 
-/* Home Page Picture Styles  */
-#homepageimage1, #homepageimage2 {
-    border-radius: 25px;
-}
-#homepageimagesm {
-    display: none;
-}
-
-/* Home Page Quote Styles */
-#homepagequote {
-    font-size: 40px;
-}
-
-/* Register Page Styles */
-#requiredfields {
-    color: red;
-}
-
+/* All Pages - Subtitles */
 #sellinggamestitle, #buyingamestitle, #abouttitle {
     font-size: 2em;
 }
 
+/* All Pages - Labels */
 .alllabels {
     font-weight: bold;
 }
 
+/* All Pages - Horizontal Rule */
 hr { 
     border-width: 3px;
 } 
 
-.aboutlist li {
-    border-bottom: 1px solid black;
-}
-
-#welcomeback {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.landingbutton {
-    border-radius: 50%;
-}
-
-.controllerbuttons {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .controllerbuttons img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .controllerbuttons .buybutton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-130%, -25%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    background-color: transparent;
-  }
-
-  .controllerbuttons .sellbutton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(30%, -25%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    background-color: transparent;
-  }
-  
-  
-
-
-/* Extra small devices (phones, 600px and down) */
+/* Media Queries */ 
+/* All Pages - Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-#homepageimagelg, #homepageimagesm {display: none;}
 #imagescredit {display: none;}
-#indexheader {font-size: 40px; margin-top: 6%}
-.buttontext {display: none;}
-.table {font-size: 12px;}
-.aboutimages {display: none;}
-.aboutcontent {font-size: 12px;}
-#welcomeback {font-size: 35px;}
+#siteheader {font-size: 40px; margin-top: 6%}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* All Pages - Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-#homepageimagelg {display: none;}
-#homepageimagesm {display: inline;}
-#indexheader {font-size: 60px;}
+    #siteheader {font-size: 60px;}
 }
 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-#homepageimagelg {display: inline;}
-#homepageimagesm {display: none;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
+/* All Pages - Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 993px) {
-#indexheader {font-size: 90px;}
+#siteheader {font-size: 90px;}
 } 
-
 
