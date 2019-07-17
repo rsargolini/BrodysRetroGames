@@ -51,10 +51,10 @@
 
         <!-- Game Information Form Section -->
         <section class="container-fluid">
-            <h2 class="col-12 text-center" id="subtitle"><strong>Selling Games</strong></h2>
+            <h2 class="col-12 text-center" id="subtitles"><strong>Selling Games</strong></h2>
             <hr>
             <h3>Game Information</h3>
-            <form name="searchForm" action="#">
+            <form name="gameinfoForm" action="#">
                 <div class="form-row">
                     <div class="form-group col-sm-4">
                         <label for="staticSellerName" class="alllabels">Seller Name</label>
@@ -76,17 +76,19 @@
                     </div>
                     <div class="form-group col-sm-4">
                         <label for="inputGameTitle" class="alllabels">Game Title</label>
-                        <input type="text" class="form-control" id="inputGameTitle" placeholder="Enter Game Title">
+                        <input type="text" class="form-control" id="inputGameTitle" placeholder="Enter Game Title"
+                            required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-sm-4">
                         <label for="inputAvailDate" class="alllabels">Available Date</label>
-                        <input type="date" class="form-control" id="inputAvailDate">
+                        <input type="date" class="form-control" id="inputAvailDate" required>
                     </div>
                     <div class="form-group col-sm-4">
                         <label for="inputPrice" class="alllabels">Price</label>
-                        <input type="text" class="form-control" id="inputPrice" placeholder="Enter Price">
+                        <input type="text" class="form-control" pattern="\d+(\.\d{2})?" title="999.99" id="inputPrice"
+                            placeholder="Enter Price" required>
                     </div>
                 </div>
                 <div class="form-row">
@@ -108,7 +110,7 @@
                     </div>
                 </div>
                 <div class="form-group text-center pt-3">
-                    <button type="button" class="btn btn-success btn-md">Submit</button>
+                    <button type="submit" class="btn btn-success btn-md">Submit</button>
                     <button type="reset" class="btn btn-danger btn-md">Reset</button>
                 </div>
             </form>
@@ -218,61 +220,70 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <label for="selectModalConsole" class="alllabels">Game Console</label>
-                                <select id="selectModalConsole" class="form-control">
-                                    <option>Select...</option>
-                                    <option>Atari 2600</option>
-                                    <option>GameCube</option>
-                                    <option>NES</option>
-                                    <option selected>Nintendo 64</option>
-                                    <option>Sega DreamCast</option>
-                                    <option>Sega Genisis</option>
-                                    <option>SNES</option>
-                                </select>
-                            </div>
-                            <div class="row">
-                                <label for="inputModalGameTitle" class="alllabels">Game Title</label>
-                                <input type="text" class="form-control" id="inputModalGameTitle"
-                                    placeholder="Super Mario 64">
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="inputModalAvailDate" class="alllabels">Available Date</label>
-                                    <input type="date" class="form-control" id="inputModalAvailDate" value="2019-07-19">
+                        <form name="modaleditForm" action="#">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <label for="selectModalConsole" class="alllabels">Game
+                                        Console</label>
+                                    <select id="selectModalConsole" class="form-control">
+                                        <option>Select...</option>
+                                        <option>Atari 2600</option>
+                                        <option>GameCube</option>
+                                        <option>NES</option>
+                                        <option selected>Nintendo 64</option>
+                                        <option>Sega DreamCast</option>
+                                        <option>Sega Genisis</option>
+                                        <option>SNES</option>
+                                    </select>
                                 </div>
-                                <div class="form-group col">
-                                    <label for="inputModalPrice" class="alllabels">Price</label>
-                                    <input type="text" class="form-control" id="inputModalPrice" placeholder="$19.95">
+                                <div class="row">
+                                    <label for="inputModalGameTitle" class="alllabels">Game
+                                        Title</label>
+                                    <input type="text" class="form-control" id="inputModalGameTitle"
+                                        placeholder="Super Mario 64">
                                 </div>
-                                <div class="form-row">
-                                    <strong class="ml-1">Condition&nbsp;&nbsp;</strong>
-                                    <div class="custom-control custom-radio">
-                                        <input class="custom-control-input" type="radio" name="inlineModalRadios"
-                                            id="inlineModalRadio1" value="option1" checked>
-                                        <label class="custom-control-label"
-                                            for="inlineModalRadio1">Mint&nbsp;&nbsp;</label>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="inputModalAvailDate" class="alllabels">Available
+                                            Date</label>
+                                        <input type="date" class="form-control" id="inputModalAvailDate"
+                                            value="2019-07-19">
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input class="custom-control-input" type="radio" name="inlineModalRadios"
-                                            id="inlineModalRadio2" value="option2">
-                                        <label class="custom-control-label"
-                                            for="inlineModalRadio2">Fair&nbsp;&nbsp;</label>
+                                    <div class="form-group col">
+                                        <label for="inputModalPrice" class="alllabels">Price</label>
+                                        <input type="text" class="form-control" pattern="\d+(\.\d{2})?" title="999.99"
+                                            id="inputModalPrice" placeholder="$19.95">
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input class="custom-control-input" type="radio" name="inlineModalRadios"
-                                            id="inlineModalRadio3" value="option3">
-                                        <label class="custom-control-label"
-                                            for="inlineModalRadio3">Poor&nbsp;&nbsp;</label>
+                                    <div class="form-row">
+                                        <strong class="ml-1">Condition&nbsp;&nbsp;</strong>
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" type="radio" name="inlineModalRadios"
+                                                id="inlineModalRadio1" value="option1" checked>
+                                            <label class="custom-control-label"
+                                                for="inlineModalRadio1">Mint&nbsp;&nbsp;</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" type="radio" name="inlineModalRadios"
+                                                id="inlineModalRadio2" value="option2">
+                                            <label class="custom-control-label"
+                                                for="inlineModalRadio2">Fair&nbsp;&nbsp;</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" type="radio" name="inlineModalRadios"
+                                                id="inlineModalRadio3" value="option3">
+                                            <label class="custom-control-label"
+                                                for="inlineModalRadio3">Poor&nbsp;&nbsp;</label>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success" data-dismiss="modal">Save
+                                        Changes</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="reset" class="btn btn-danger btn-md">Reset</button>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">Save Changes</button>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
