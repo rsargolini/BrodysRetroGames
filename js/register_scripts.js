@@ -26,7 +26,7 @@ window.onload = function () {
             // Show Mismatch Message
             mismatchMsg.style.display = 'block';
 
-            // Reset Passowrd and Confirm Password back to placeholder values
+            // Reset Password and Confirm Password back to placeholder values
             inputPassword.value = '';
             confirmPassword.value = '';
 
